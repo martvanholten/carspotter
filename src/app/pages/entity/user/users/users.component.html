@@ -1,0 +1,15 @@
+<h3>Users</h3>
+
+<div *ngFor="let user of users">
+
+  <p>
+    <a
+      [title]="user.firstName"
+      routerLink="/users/{{user.id}}">
+      {{ user.firstName }}
+    </a>
+  </p>
+
+</div>
+
+<a routerLink="adduser" class="btn btn-primary">Add user</a>
